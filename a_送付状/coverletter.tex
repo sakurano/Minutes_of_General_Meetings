@@ -1,0 +1,66 @@
+\documentclass[a4j]{jarticle}
+\def\adderssee{}
+\makeatletter
+\renewcommand{\@maketitle}{\newpage
+\begin{center}{\LARGE \@title \par} \end{center}
+\begin{flushright}\和暦\@date\end{flushright}
+\par\vskip 1.5em}
+
+\title{書類送付のご案内}
+\def\adresseecompany{法務建設株式会社}
+\def\adresseedepartment{総務部}
+\def\adresseetitle{テスト課長}
+\def\adresseename{乙野 太郎}
+\def\adresseehonorific{様}
+
+\def\senderaddress{東京都千代田区霞が関一丁目１番１号}
+\def\sendercompany{株式会社サンプル建設}
+\def\sendertitle{代表取締役}
+\def\sendername{甲野 太郎}
+
+\makeatother
+\usepackage{ifthen}
+
+\begin{document}
+\date{\today}
+\maketitle
+\thispagestyle{empty}
+\begin{flushleft}
+\adresseecompany\\
+\ifthenelse{\NOT\equal{\adresseedepartment}{}}{\adresseedepartment\\}{}
+\adresseetitle~~\adresseename~~\adresseehonorific
+\end{flushleft}
+\begin{flushright}\
+\begin{tabular}{l}
+\senderaddress\\
+\sendercompany\\
+~~\sendertitle~~\sendername\\
+\end{tabular}
+\end{flushright}
+
+\section*{}
+
+拝啓　時下ますますご清栄のこととお喜び申し上げます。平素は格別のお引き立てを賜り、誠にありがとうございます。
+
+さて、下記の書類を送付いたしますので、ご査収の程よろしくお願い申し上げます。
+\begin{flushright}敬具\end{flushright}
+\vspace{1cm}
+\begin{center}記\end{center}
+\vspace{1cm}
+
+\begin{itemize}
+	\item 開発契約書　２部
+\end{itemize}
+%aaaaaa
+
+\begin{flushright}以上\end{flushright}
+
+\vspace{1cm}
+
+
+
+\clearpage
+
+
+\end{document}
+
