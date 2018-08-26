@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{jsarticle}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage[truedimen,left=25truemm,right=25truemm,top=25truemm,bottom=25truemm]{geometry}
+\usepackage{array}
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+
+\def\event{臨時株主総会}
+\def\title{\event 議事録}
+\def\author{}
+
+\def\eventstart{平成30年9月1日午前9時0分0秒}
+\def\eventend{午前9時0分30秒}
+\def\place{当会社の本店}
+
+\def\NumOfStockholder{1名}
+\def\AllIssuedStocks{256株}
+\def\VotingNumOfStockholder{1名}
+\def\VotingAllIssuedStocks{256株}
+\def\AttendanceNumOfStockholder{1名}
+\def\AttendanceAllIssuedStocks{256株}
+\def\AttendanceDirectors{甲野 太郎\\乙野 次郎}
+\def\Chairman{甲野 太郎}
+\def\RecordingSecretary{甲野 太郎}
+
+\def\Date{平成30年9月1日}
+\def\CompanyName{株式会社テスト商事}
+\def\CompanyAddress{東京都千代田区霞が関一丁目１番１号}
+\def\CompanyRepresentative{代表取締役　甲野 太郎}
+\renewcommand{\thesection}{第\arabic{section}号議案}
+
+\begin{document}
+	
+	\newpage
+	{\centering \Large\bf \title  \vskip 0em}
+	\vskip 2em
+	\eventstart より、\place においてを\event を開催した。
+	\vskip 2em
+	\begin{center}
+		\newcolumntype{C}{>{\raggedleft}p{10em}}
+		\begin{tabular}{|l|C|}
+			\hline
+			株主の総数& \NumOfStockholder 
+			\tabularnewline \hline
+			発行済株式の総数& \AllIssuedStocks 
+			\tabularnewline \hline
+			議決権を行使することができる株主の数& \VotingNumOfStockholder 
+			\tabularnewline \hline
+			議決権を行使することができる株主の議決権の数& \VotingAllIssuedStocks 
+			\tabularnewline \hline
+			出席株主数（委任状による者を含む）& \AttendanceNumOfStockholder 
+			\tabularnewline \hline
+			出席株主の議決権の数& \AttendanceAllIssuedStocks 
+			\tabularnewline \hline
+			出席取締役& \AttendanceDirectors \tabularnewline\hline
+			議長& \Chairman 
+			\tabularnewline \hline
+			議事録作成者& \RecordingSecretary 
+			\tabularnewline \hline
+		\end{tabular}
+	\end{center}
+	\vskip 2em
+	
+	以上のとおり総株主の議決権の過半数に相当する株式を有する株主が出席したので、本会は適法に成立した。よって、議長は議長席に着き、開会を宣した。
+	
+	
+	\section{定款変更の件}
+	
+	議長は当社定款を以下の通り変更したい旨を述べ、議場に諮ったところ、満場一致の決議をもって原案どおり可決確定した。
+	\begin{quote}
+		定款を次のとおり変更すること。\\
+		第３条	当会社は、本店を東京都中央区に置く。
+	\end{quote}
+	
+	
+	
+	\vspace{2em}
+	以上をもって本日の議事を終了したので、議長は閉会を宣した。閉会時刻は\eventend であった。 
+	上記の決議を明確にするため、この議事録を作成し、出席取締役がこれに記名押印する。
+	
+	
+	\vspace{3em}
+	\begin{flushright}
+		\Date \\
+		\vspace{1em}
+		\CompanyAddress \\
+		\CompanyName \\
+		\setlength{\baselineskip}{2em} 
+		出席取締役　\AttendanceDirectors \\
+	\end{flushright}
+\end{document}
